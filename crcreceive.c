@@ -25,10 +25,10 @@ void crc(char dw[],char div[])
 	printf("The remainder is:  ");
 	/*for(i=dl;i<strlen(dw);i++)
 		printf("%c",dw[i]);*/
-	for(i=divl;i<strlen(dw);i++)
+	for(i=dl-divl+1;i<strlen(dw);i++)
 		printf("%c",dw[i]);
 	printf("\nThe dataword is:  ");
-	for(i=0;i<strlen(dw);i++)
+	for(i=0;i<strlen(dw)-1;i++)
 		printf("%c",result[i]);
 	int len=strlen(dw);
 	for(i=0;i<len;i++){
