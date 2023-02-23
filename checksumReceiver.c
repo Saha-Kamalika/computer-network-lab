@@ -38,7 +38,7 @@ void main()
 			printf("Data rejected");
 			strncpy(s1,cw,strlen(cw)-sl);
 			s1[strlen(cw)-sl]='\0';
-			printf("\nThe transmitted bit was ");
+			printf("\nThe transmitted bit pattern was ");
 			puts(s1);
 			return;
 		}
@@ -46,6 +46,6 @@ void main()
 	printf("Data accepted");
 	strncpy(s1,cw,strlen(cw)-sl);
 	s1[strlen(cw)-sl]='\0';
-	printf("\nThe transmitted bit was ");
+	printf("\nThe transmitted bit pattern was ");
 	puts(s1);
 }
