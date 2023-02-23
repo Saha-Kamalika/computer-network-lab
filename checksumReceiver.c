@@ -36,14 +36,16 @@ void main()
 	for(i=0;i<sl;i++){
 		if(s[i]!='0'){
 			printf("Data rejected");
-			printf("\nThe checksum is ");
-			puts(s);
+			strncpy(s1,cw,strlen(cw)-sl);
+			s1[strlen(cw)-sl]='\0';
+			printf("\nThe transmitted bit was ");
+			puts(s1);
 			return;
 		}
 	}
 	printf("Data accepted");
-	printf("\nThe checksum is ");
-	puts(s);
+	strncpy(s1,cw,strlen(cw)-sl);
+	s1[strlen(cw)-sl]='\0';
+	printf("\nThe transmitted bit was ");
+	puts(s1);
 }
-
-
