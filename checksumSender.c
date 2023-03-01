@@ -10,7 +10,7 @@ void main()
 		printf("Enter segment length: ");
 		scanf("%d",&sl);
 	}
-    int l=sl-(strlen(dw)-sl);
+    int l=sl-(strlen(dw)%sl);
     for(i=0;i<l;i++)
         zero[i]='0';
     zero[i]='\0';
