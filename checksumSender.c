@@ -42,9 +42,9 @@ void main()
 		s[i]=(s[i]=='1')?'0':'1';}
 	printf("The Checksum is: ");
 	puts(s);
-	strcat(dw,s);
+	strcat(zero,s);
 	printf("The transmitted bit pattern is: ");
-	puts(dw);
+	puts(zero+sl);
 }
 
 
