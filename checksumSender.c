@@ -15,8 +15,8 @@ void main()
         zero[i]='0';
     zero[i]='\0';
     strcat(zero,dw);
-    printf("The new sequence is: ");
-    puts(zero);
+    //printf("The new sequence is: ");
+    //puts(zero);
     for(i=0;i<sl;i++)
         s[i]='0';
     s[i]='\0';
@@ -42,9 +42,9 @@ void main()
 		s[i]=(s[i]=='1')?'0':'1';}
 	printf("The Checksum is: ");
 	puts(s);
-	strcat(zero,s);
+	strcat(dw,s);
 	printf("The transmitted bit pattern is: ");
-	puts(zero);
+	puts(dw);
 }
 
 
