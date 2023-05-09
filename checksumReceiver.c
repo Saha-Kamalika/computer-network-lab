@@ -2,7 +2,7 @@
 #include<string.h>
 void main()
 {
-    char cw[50],zero[50],s[20];
+    char cw[50],zero[50],s[20],s1[20];
     int sl=-1,i,j,sum=0;
     printf("Enter the codeword: ");
     scanf("%s",cw);
