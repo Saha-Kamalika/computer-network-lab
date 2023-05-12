@@ -10,13 +10,15 @@ void main()
 		printf("Enter segment length: ");
 		scanf("%d",&sl);
 	}
-    int l=sl-(strlen(dw)/sl);
+    if(strlen(dw)%sl){
+    int l=sl-(strlen(dw)%sl);
     for(i=0;i<l;i++)
         zero[i]='0';
     zero[i]='\0';
+	}
     strcat(zero,dw);
-    //printf("The new sequence is: ");
-    //puts(zero);
+    printf("The new sequence is: ");
+    puts(zero);
     for(i=0;i<sl;i++)
         s[i]='0';
     s[i]='\0';
